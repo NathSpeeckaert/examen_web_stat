@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Accueil</title>
+	<link rel="stylesheet" media="screen" type="text/css" title="test" href="cosmeto.css" />
+	<script src="menudh.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+	</style>
+</head>
+		
+<body>
+ 
+	<header> 
+		<div id="logo">	   
+			<a href="Accueil.html"><img src="images/CM_logo.png" alt="logo cosméto maison" /></a>	  
+		</div>
+	   
+	   <div id="entete">	   
+			<p style="font-size: 200%;">Prenez soin de vous au naturel</p>
+	   </div>
+	</header>
+	
+	<nav>
+		<ul id="menu">
+			<li onmouseover="show()"><a href="Accueil.html">Accueil</a></li>
+			
+			<li onmouseover="show('ssmenu1')">Menu 1
+				<ul class="ssmenu" id="ssmenu1" onmouseleave="show()">				
+					<li><a href="#menu">nav<br/>superposition blocs<br/>display<br/>inline-block<br/>:hover</a></li>
+					<li><a href="#entete">alignement vertical balise bloc<br/>formatage dans balise</a></li>
+					<li><a href="#colgauche">section</a></li>
+					<li><a href="#centre">overflow</a></li>
+					<li><a href="Accueil.html#strong">strong</a></li>
+					<li><a href="Accueil.html#em">em</a></li>
+					<li><a href="demaquillant.html#span">span</a></li>
+				</ul>
+			</li>	
+			
+			<li onmouseover="show('ssmenu2')">Menu 2
+				<ul class="ssmenu" id="ssmenu2" onmouseleave="show()">	
+					
+					<li><a href="Accueil.html#memomap">Image cliquable</a></li>
+					<li><a href="#coldroite">aside</a></li>
+					<li><a href="articles.html#art01">article</a></li>
+					<li><a href="demaquillant.html">tableau avec fusion<br/>feuille de style interne<br/>menu avec lien position fixe</a></li>
+					<li><a href="#lstlnk">:before :after</a></li>				
+				</ul>
+			</li>
+
+			<li onmouseover="show('ssmenu3')">Menu 3
+				<ul class="ssmenu" id="ssmenu3" onmouseleave="show()">
+					<li><a href="iframe.html">iframe<br/>video<br/>bloc positionné dans un bloc positionné</a></li>								
+					<li><a href="formulaire.html">Formulaire<br/>:focus</a></li>										
+				</ul>
+			</li>				
+		</ul>
+	</nav>
+	
+	<section id="colgauche">
+								
+		<h3 class="heading3">Connexion</h3>
+		<form method="post" action="connexion.php">
+			<label for="nom">Login :</label><br />
+			<input type="text" name="nom" id="nom" class="flash" size="14" /><br />
+			<label for="pass">Mot de passe :</label><br />
+			<input type="password" name="pass" id="pass" class="flash" size="14"/><br />
+			<br/>
+			<input type="submit" value="Valider"/> <input type="reset" value="Effacer" />
+		</form>
+		
+		<a href="formulaire.html">Formulaire de contact</a>
+		
+	</section>
+	
+	<main id="centre">
+		<map name="memoMap"> 
+			<area coords="58,42,185,134" href="articles.html#art02" shape="RECT" title="Vers un recette corps" alt="recette corps">
+			<area coords="220,46,342,134" href="demaquillant.html" shape="RECT" title="Vers un recette visage" alt="recette visage">
+			<area coords="380,49,502,133" href="articles.html#art06" shape="RECT" title="Vers un recette cheveux" alt="recette cheveux">    
+		</map>				
+		<p id="memomap"><img src="images/memoMap.jpg" alt="vers les recettes" usemap="#memoMap"/></p>
+		<div id="intro">
+			<h1 class="heading1">Recettes cosmétiques maison : une tendance à suivre</h1>
+			<p>
+				Depuis quelques années, le fait maison s’invite dans la cosmétique. Le concept ? Offrir à notre peau tout ce dont elle a besoin grâce à des aliments frais. On troque nos masques, gommages et crèmes de grandes enseignes pour des mixtures à base d’ingrédients naturels fabriqués par nos soins depuis notre cuisine. Une solution anti-gaspillage et 100 % naturelle qui possède toutefois quelques contraintes et des règles de conservation à suivre. Parce que les cosmétiques faits maison se conservent moins bien que ceux du commerce, il est conseillé d’utiliser les préparations tout de suite après les avoir concoctées. Après s'être bien lavé les mains, il est aussi très important de stériliser les contenants et tous les ustensiles dans de l’eau bouillante avant de commencer. Si l’huile ou le beurre se conservent plus longtemps, les produits de beauté à base d’eau peuvent très vite être contaminés par des bactéries. L’astuce ? Ajouter des conservateurs naturels à la préparation. Rendez-vous dans la cuisine… 				
+			</p>
+			<h1 class="heading1">Cosmétiques maison : pourquoi les faire soi-même ?</h1>
+			<p id="strong">
+				<strong>Parce que c’est naturel…</strong> Si l’on devait choisir une seule raison ce serait sans doute celle-ci. Depuis quelques années, nous sommes de plus en plus attentifs à la composition de nos produits de beauté préférés. Et malheureusement, ces derniers laissent souvent à désirer. Fabriquer ses propres cosmétiques avec des ingrédients naturels et bio semble être LA solution pour ne plus se méfier de notre vanity.
+			</p>
+			<p>
+				<strong>Parce que c’est économique…</strong> Autre argument de taille, le prix global de la recette est souvent beaucoup moins élevé qu’un produit disponible dans le commerce. Mieux encore, un ingrédient peut servir pour plusieurs recettes. Par exemple, le beurre de karité peut aussi bien être utilisé pour un baume à lèvre que dans une crème hydratante.
+			</p>
+			<p>
+				<strong>Parce que c’est responsable…</strong> En fabriquant soi-même ses cosmétiques, on fait attention à l’environnement et on limite le gâchis dans notre frigo. Le « Do It Yourself »c'est aussi l’assurance d’une consommation plus éthique en privilégiant bien sûr des produits frais et bio.
+			</p>
+			<p>
+				<strong>Parce que c’est ludique…</strong> Dans notre cuisine, seule ou accompagnée, on joue à être une chimiste en herbe. Comme on le ferait pour une recette de cuisine, on touille, mélange, saupoudre… Le petit plus ? La satisfaction de réaliser de nos mains un soin naturel et efficace !
+			</p>
+			<p>
+				<strong>Parce que c’est personnalisé…</strong> Qui mieux que nous pour identifier nos besoins et nos envies? Alors que toutes les marques de beauté se lancent dans la personnalisation des soins, le fait maison répond parfaitement à cette tendance.
+			</p>
+			<h1 class="heading1">Fabriquer ses cosmétiques soi-même : les astuces faciles pour les débutants</h1>
+			<p>
+				Pour bien commencer, il est judicieux d’opter pour des recettes simples avec des ingrédients basiques. L’idée ? Choisir des aliments naturels que l’on pourra réutiliser dans plusieurs recettes différentes. On se tourne donc vers du miel, de l’aloe vera, du beurre de karité, de l’huile de coco ou d'amande douce ou encore du sucre en poudre. Si le fait-maison traîne derrière lui de nombreuses idées reçues, comme celle d’être une activité réservée aux experts de la cuisine, nos différentes recettes nous prouvent le contraire.
+			</p>
+			<p id="em">
+				Cet article est une copie de l'article <em><a href="https://www.elle.fr/Beaute/Soins/Tendances/9-recettes-de-cosmetiques-faits-maison">"13 recettes de cosmétiques faits maison"</a></em> publié sur le site <em><a href="https://www.elle.fr">www.ELLE.fr</a></em> </p>
+		</div>
+	</main>
+	
+	<aside id="coldroite">
+		<div id="lstlnk">
+			<h3 class="heading3">Les dernières recettes</h3>
+			<ul>
+				<li><a href="demaquillant.html">Démaquillant biphasé</a></li>
+				<li><a href="articles.html#art01">Soin coup de soleil</a></li>
+				<li><a href="articles.html#art02">Soin pour pieds secs</a></li>				
+				<li><a href="articles.html#art03">Masque purifiant</a></li>
+				<li><a href="articles.html#art04">Gommage visage</a></li>
+				<li><a href="articles.html#art05">Soin pointes sèches</a></li>
+				<li><a href="articles.html#art06">Shampooing sec</a></li>		
+
+			</ul>
+		</div>
+	</aside>
+   
+	<footer id="pied">
+		<address><p>Cosméto maison<br/>Rue des fleurs, 12<br/>2222 Le Jardin<br/></p></address>
+	</footer>
+</body>
+</html>	
+	

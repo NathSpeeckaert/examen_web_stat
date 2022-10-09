@@ -1,0 +1,29 @@
+<!ELEMENT immo (bien+)>
+<!ELEMENT bien (appartement*,maison*)>
+
+<!ELEMENT appartement (detail)>
+
+<!ELEMENT maison (detail)>
+    <!ATTLIST maison facade (2|3|4) #REQUIRED
+              		 etage (plain-pied|1|2|3|4) #REQUIRED>
+
+<!ELEMENT detail (type, localisation, prix, extra)>
+    <!ATTLIST detail chambre CDATA #REQUIRED
+              		 sdb CDATA #REQUIRED
+              		 vitrage (simple|double|triple) #REQUIRED
+             		 cc (non|gaz|mazout)  #REQUIRED
+              		 surface CDATA #REQUIRED>
+
+<!ELEMENT extra EMPTY>
+    <!ATTLIST extra jardin (oui|non) #REQUIRED
+              		garage (oui|non) #REQUIRED>
+                
+<!ELEMENT type EMPTY>
+   <!ATTLIST type cession (location|vente) #REQUIRED>
+
+
+
+<!ELEMENT prix (#PCDATA)>
+
+<!ELEMENT localisation EMPTY>
+    <!ATTLIST localisation commune (Anderlecht|Auderghem|Berchem-Sainte-Agathe|Bruxelles|Etterbeek|Evere|Forest|Ganshoren|Ixelles|Jette|Koekelberg|Molenbeek-Saint-Jean|Saint-Gilles|Saint-Josse-ten-Noode|Schaerbeek|Uccle|Watermael-Boitsfort|Woluwé-Saint-Lambert|Woluwé-Saint-Pierre) #REQUIRED>

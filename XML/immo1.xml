@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="immo1.xsl"?>
+
+<!DOCTYPE immo SYSTEM "immo.dtd">
+<immo>
+
+    <bien>
+        <maison facade="2" etage="2"> 
+            <detail chambre="6" sdb="1" vitrage="double" cc="gaz" surface="172" >
+                <type cession="vente"></type>
+                <localisation commune="Evere"></localisation>
+                <prix>299000</prix>
+                <extra jardin="oui" garage="non"></extra>
+            </detail>
+        </maison>
+    </bien>
+
+    <bien>  
+
+        <maison facade="2" etage="2"> 
+            <detail chambre="5" sdb="2" vitrage="double" cc="gaz" surface="185" >
+                <type cession="vente"></type>
+                <localisation commune="Anderlecht"></localisation>
+                <prix>325000</prix>
+                <extra jardin="oui" garage="non"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>    
+
+        <maison facade="2" etage="2"> 
+            <detail chambre="3" sdb="1" vitrage="double" cc="non" surface="60" >
+                <type cession="vente"></type>
+                <localisation commune="Auderghem"></localisation>
+                <prix>205000</prix>
+                <extra jardin="oui" garage="non"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>
+        <maison facade="2" etage="3"> 
+            <detail chambre="4" sdb="2" vitrage="simple" cc="non" surface="150" >
+                <type cession="vente"></type>
+                <localisation commune="Molenbeek-Saint-Jean"></localisation>
+                <prix>219000</prix>
+                <extra jardin="non" garage="non"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>
+        <maison facade="2" etage="3"> 
+            <detail chambre="4" sdb="4" vitrage="simple" cc="mazout" surface="150" >
+                <type cession="vente"></type>
+                <localisation commune="Molenbeek-Saint-Jean"></localisation>
+                <prix>300000</prix>
+                <extra jardin="oui" garage="oui"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>
+        <maison facade="4" etage="3"> 
+            <detail chambre="6" sdb="3" vitrage="triple" cc="gaz" surface="300" >
+                <type cession="location"></type>
+                <localisation commune="Woluwé-Saint-Lambert"></localisation>
+                <prix>4000</prix>
+                <extra jardin="oui" garage="oui"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>
+        <maison facade="2" etage="3"> 
+            <detail chambre="4" sdb="2" vitrage="double" cc="gaz" surface="200" >
+                <type cession="location"></type>
+                <localisation commune="Ixelles"></localisation>
+                <prix>2000</prix>
+                <extra jardin="oui" garage="oui"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>    
+        <maison facade="2" etage="2"> 
+            <detail chambre="5" sdb="3" vitrage="double" cc="gaz" surface="300" >
+                <type cession="location"></type>
+                <localisation commune="Schaerbeek"></localisation>
+                <prix>2050</prix>
+                <extra jardin="non" garage="non"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>
+        <maison facade="2" etage="2"> 
+            <detail chambre="4" sdb="2" vitrage="double" cc="gaz" surface="200" >
+                <type cession="location"></type>
+                <localisation commune="Anderlecht"></localisation>
+                <prix>2100</prix>
+                <extra jardin="non" garage="non"></extra>
+            </detail>
+        </maison>
+    </bien>
+    <bien>
+        <appartement>
+            <detail chambre="2" sdb="1" vitrage="double" cc="mazout" surface="75" >
+                <type cession="location"></type>
+                <localisation commune="Ixelles"></localisation>
+                <prix>900</prix>
+                <extra jardin="non" garage="oui"></extra>
+            </detail>
+        </appartement>       
+    </bien>
+    <bien>
+        <appartement>
+            <detail chambre="1" sdb="1" vitrage="double" cc="gaz" surface="60" >
+                <type cession="location"></type>
+                <localisation commune="Schaerbeek"></localisation>
+                <prix>750</prix>
+                <extra jardin="non" garage="non"></extra>
+            </detail>
+        </appartement>
+    </bien>
+    <bien>
+        <appartement>
+            <detail chambre="3" sdb="1" vitrage="double" cc="gaz" surface="150" >
+                <type cession="location"></type>
+                <localisation commune="Anderlecht"></localisation>
+                <prix>1250</prix>
+                <extra jardin="oui" garage="non"></extra>
+            </detail>
+        </appartement>                      
+    </bien>
+</immo>

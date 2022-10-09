@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Démaquillant biphasé</title>
+	<link rel="stylesheet" media="screen" type="text/css" title="test" href="cosmeto.css" />
+	<script src="menudh.js"></script>
+	
+</head>
+		
+<body>
+ 
+	<header> 
+		<div id="logo">	   
+			<a href="articles.html"><img src="images/CM_logo.png" alt="logo cosméto maison" /></a>	  
+		</div>
+	   
+	   <div id="entete">	   
+			<p>Prenez soin de vous au naturel</p>
+	   </div>
+	</header>
+	
+	<nav>
+		<ul id="menu">
+			<li onmouseover="show()"><a href="articles.html">Accueil</a></li>
+			
+			<li onmouseover="show('ssmenu1')">Visage
+				<ul class="ssmenu" id="ssmenu1" onmouseleave="show()">				
+                    <li><a href="demaquillant.html">Démaquillant biphasé</a></li>
+                    <li><a href="articles.html#art03">Masque purifiant</a></li>
+                    <li><a href="articles.html#art04">Gommage visage</a></li>
+				</ul>
+			</li>	
+			
+			<li onmouseover="show('ssmenu2')">Corps
+				<ul class="ssmenu" id="ssmenu2" onmouseleave="show()">	
+					
+                    <li><a href="articles.html#art01">Soin coup de soleil</a></li>
+                    <li><a href="articles.html#art02">Soin pour pieds secs</a></li>			
+				</ul>
+			</li>
+
+			<li onmouseover="show('ssmenu3')">Cheveux
+				<ul class="ssmenu" id="ssmenu3" onmouseleave="show()">
+                    <li><a href="articles.html#art05">Soin pointes sèches</a></li>
+                    <li><a href="articles.html#art06">Shampooing sec</a></li>								
+				</ul>
+			</li>				
+		</ul>
+	</nav>
+
+	<main id="centre">
+		<table>
+			<tr ><th colspan="3">Démaquillant bi-phasé</th></tr>
+			
+			<tr>
+				<th>Type de peau</th>
+				<th>Huile végétale 50%</th>
+				<th>Hydrolat 50%</th>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">Sèche</th>
+				<td>Avocat</td>
+				<td>Fleur d'oranger</td>
+			</tr>
+			<tr>
+				<td>Rose musquée</td>
+				<td>Rose</td>
+			</tr>
+			<tr>
+				<td>Amande douce</td>
+				<td>Camomille</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">Sensible</th>
+				<td>Rose musquée</td>
+				<td>Bleuet</td>
+			</tr>
+			<tr>
+				<td>Calendula (macérât)</td>
+				<td>Hamamélis</td>
+			</tr>
+			<tr>
+				<td>Amande douce</td>
+				<td>Camomille</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Mixte</th>
+				<td>Jojoba</td>
+				<td>Lavande</td>
+			</tr>
+			<tr>
+				<td>Macérat de carotte</td>
+				<td>Géranium</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Déshydratée</th>
+				<td rowspan="2">Macadamia</td>
+				<td>Fleur d'oranger</td>
+			</tr>
+			<tr>
+				<td>Rose</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="4">Mature</th>
+				<td>Argan</td>
+				<td rowspan="2">Rose</td>
+			</tr>
+			<tr>
+				<td>Noyau d'abricot</td>			
+			</tr>
+			<tr>
+				<td>Onagre</td>
+				<td rowspan="2">Géranium</td>
+			</tr>
+			<tr>
+				<td>Rose musquée</td>
+			</tr>
+			
+			<tr>
+				<th>Desquamante</th>
+				<td>Amande douce</td>
+				<td>Camomille</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Fragile</th>
+				<td rowspan="2">Calophylle</td>
+				<td>Hamamélis</td>
+			</tr>
+			<tr>
+				<td>Hélichryse</td>
+			</tr>
+		</table>
+		<p style="padding:20px;">Il suffit de mettre <span id="span">l'huile</span> et <span>l'hydrolat</span> dans le flacon de votre choix.<br/>Agiter avant l'emploi et appliquer avec un disque de coton sur l'ensemble du visage. Utiliser de l'hydrolat pour terminer votre routine démaquillage.</p>
+	</main>
+	
+	<footer id="pied">
+		<address><p>Cosméto maison<br/>Rue des fleurs, 12<br/>2222 Le Jardin<br/></p></address>
+	</footer>
+</body>
+</html>	
+	

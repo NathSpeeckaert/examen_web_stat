@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Formulaire</title>
+	<link rel="stylesheet" media="screen" type="text/css" title="test" href="cosmeto.css" />
+	<script src="menudh.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+	</style>
+</head>
+		
+<body>
+ 
+	<header> 
+		<div id="logo">	   
+			<a href="Accueil.html"><img src="images/CM_logo.png" alt="logo cosméto maison" /></a>	  
+		</div>
+	   
+	   <div id="entete">	   
+			<p style="font-size: 200%;">Prenez soin de vous au naturel</p>
+	   </div>	   
+	</header>
+	
+	<nav>
+		<ul id="menu">
+			<li onmouseover="show()"><a href="Accueil.html">Accueil</a></li>
+			
+			<li onmouseover="show('ssmenu1')">Menu 1
+				<ul class="ssmenu" id="ssmenu1" onmouseleave="show()">				
+					<li><a href="#menu">nav<br/>superposition blocs<br/>display<br/>inline-block<br/>:hover</a></li>
+					<li><a href="#entete">alignement vertical balise bloc<br/>formatage dans balise</a></li>
+					<li><a href="#colgauche">section</a></li>
+					<li><a href="#centre">overflow</a></li>
+					<li><a href="Accueil.html#strong">strong</a></li>
+					<li><a href="Accueil.html#em">em</a></li>
+					<li><a href="demaquillant.html#span">span</a></li>
+				</ul>
+			</li>	
+			
+			<li onmouseover="show('ssmenu2')">Menu 2
+				<ul class="ssmenu" id="ssmenu2" onmouseleave="show()">	
+					
+					<li><a href="Accueil.html#memomap">Image cliquable</a></li>
+					<li><a href="#coldroite">aside</a></li>
+					<li><a href="articles.html#art01">article</a></li>
+					<li><a href="demaquillant.html">tableau avec fusion<br/>feuille de style interne<br/>menu avec lien position fixe</a></li>
+					<li><a href="#lstlnk">:before :after</a></li>				
+				</ul>
+			</li>
+
+			<li onmouseover="show('ssmenu3')">Menu 3
+				<ul class="ssmenu" id="ssmenu3" onmouseleave="show()">
+					<li><a href="iframe.html">iframe<br/>video<br/>bloc positionné dans un bloc positionné</a></li>								
+					<li><a href="formulaire.html">Formulaire<br/>:focus</a></li>										
+				</ul>
+			</li>				
+		</ul>
+	</nav>
+	
+	<section id="colgauche">
+								
+		<h3 class="heading3">Connexion</h3>
+		<form method="post" action="connexion.php">
+			<label for="nom">Login :</label><br />
+			<input type="text" name="nom" id="nom" class="flash" size="14" /><br />
+			<label for="pass">Mot de passe :</label><br />
+			<input type="password" name="pass" id="pass" class="flash" size="14"/><br />
+			<br/>
+			<input type="submit" value="Valider"/> <input type="reset" value="Effacer" />
+		</form>
+		
+	</section>
+	
+	<main id="centre">
+		<p>Vous souhaitez nous contacter ?<br/>Utiliser le formulaire ci-dessous</p>
+		 <form method="post" action="contact.php">
+		 <p>
+			<label for="name">Votre nom:</label><br />
+			<input type="text" name="nom" id="name" class="flash" /><br />
+			
+			<label for="mail">Votre e-mail:</label><br />
+			<input type="text" name="mail" id="mail" class="flash" /><br />
+		</p>
+		
+		<p>Tranche d'âge:
+			<select name="trancheAge">
+				<option value="option1">moins de 20 ans</option>
+				<option value="option2">de 21 à 40 ans</option>
+				<option value="option3">de 41 à 60 ans</option>
+				<option value="option3">plus de 60 ans</option>
+			</select>	
+			
+		</p>
+		
+		<p>
+			<input type="checkbox" name="newsletter" id="newsletter"/>
+			<label for="newsletter">Je souhaite m'abonner à la newsletter</label>
+		</p>
+			Choisissez la fréquence de réception de la newsletter <br/>
+			
+			<input type="radio" name="frequence" id="daily" value="quotidienne"/>
+			<label for="daily">Quotidienne</label>
+			
+			<input type="radio" name="frequence" id="weekly" value="hebdomadaire"/>
+			<label for="weekly">Hebdomadaire</label>
+		<p>
+			<label for="message">Votre message:</label><br/>
+			<textarea name="message" id="message" class="flash" maxlength="200" placeholder="Maximum 200 caractères" cols="50" rows="4" ></textarea>
+		</p>
+
+		 <p>
+			<input type="submit" value="Valider"/> <input type="reset" value="Effacer" />
+		</p>
+
+		</form>
+	</main>
+	
+	<aside id="coldroite">
+		<div id="lstlnk">
+			<h3 class="heading3">Les dernières recettes</h3>
+			<ul>
+				<li><a href="demaquillant.html">Démaquillant biphasé</a></li>
+				<li><a href="articles.html#art01">Soin coup de soleil</a></li>
+				<li><a href="articles.html#art02">Soin pour pieds secs</a></li>				
+				<li><a href="articles.html#art03">Masque purifiant</a></li>
+				<li><a href="articles.html#art04">Gommage visage</a></li>
+				<li><a href="articles.html#art05">Soin pointes sèches</a></li>
+				<li><a href="articles.html#art06">Shampooing sec</a></li>		
+			</ul>
+		</div>
+	</aside>
+   
+	<footer id="pied">
+		<address><p>Cosméto maison<br/>Rue des fleurs, 12<br/>2222 Le Jardin<br/></p></address>
+	</footer>
+</body>
+</html>	
+	

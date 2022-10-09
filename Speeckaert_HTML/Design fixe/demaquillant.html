@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Démaquillant biphasé</title>
+	<script src="menudh.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+		body {
+		background-image:linear-gradient(#732e32, #d9d3b8);
+		width: 900px;
+		margin:auto;
+		font: 100% century gothic, verdana, arial, sans-serif;	
+		}
+
+		.heading1 {
+			color:#732e32;
+			font-size: 150%;
+			text-align:center;
+			font-family: 'Poiret One', century gothic, sans-serif;
+		}
+
+		.heading2 {
+			color:#732e32;
+			font-size: 120%;
+			text-align:left;
+			font-family: 'Poiret One', century gothic, sans-serif;
+		}
+		
+		.heading3 {
+			color:#732e32;
+			font-size: 110%;
+			text-align:center;
+			font-family: 'Poiret One', century gothic, sans-serif;
+		}				
+
+		span{
+			color: #732e32;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		header {
+			background-image:url("images/header.png");
+			background-repeat:no-repeat;
+			background-position:center center;
+			height:150px;	
+		}
+
+		#logo {
+			float:left;
+			padding-left:5px;	
+			width: 200px;
+			height:130px;	
+			text-align:left;
+		}
+
+		#entete {	
+			display: table-cell;
+			vertical-align: middle;
+			height:130px;
+			width: 690px;	
+			margin-left:210px;	
+			color:#732e32;
+			text-align:center;
+			font-family: 'Poiret One', century gothic, sans-serif;
+			font-weight: bold;
+		}
+
+		nav {
+			text-align:center;
+			background-color: #d9d3b8;
+			width:900px;
+			height: 25px;	
+			margin-top:5px;
+			margin-bottom:5px;
+			padding-top:5px;
+			padding-bottom:5px;
+			color: #732e32;
+			border:solid 1px #732e32;
+		}
+
+		#menu {
+			display:inline-block;	
+			width:100%;
+			height: 25px;
+			margin:auto;
+			padding:0;
+			text-align:center;
+			vertical-align:middle;
+			z-index:3;
+			position:sticky;	
+		}
+
+		#menu ul{
+			padding-left: 0px;
+		}
+
+		#menu ul li{
+			width:100%;	
+		}
+			 
+		#menu a {
+			text-decoration: none;
+			color: #732e32;
+			display:block;
+			height:auto;	
+		} 
+ 
+		#menu li {
+			float:left;
+			width:25%;	
+			cursor: pointer;
+			background-color: #d9d3b8;
+		}
+ 
+		#menu li:hover {
+			background-color:white;	
+		}
+
+		.ssmenu li a {
+			display:block;
+			z-index:2;
+			font-size:85%;
+			border-bottom: solid 1px #732e32;
+			padding:3px;		
+		}
+
+		.flash:focus {
+			background-color:#d9c5d2;
+		}
+
+		#colgauche {
+			float:left;
+			margin-bottom: 5px;
+			float:left;	
+			width: 155px;
+			height:570px;
+			background: #d9d3b8;
+			z-index:50;
+			border:solid 1px #732e32;
+		}
+
+		#colgauche a{
+			text-decoration: none;
+			color: #732e32;
+			display:block;
+			height:auto;
+			font-size:small;
+			text-align:center;
+			border: solid 1px #732e32;
+			margin:2px;	
+		}
+		#colgauche a:hover {
+			background-color:#d9d3b8;
+			font-weight:bold;
+		}
+	
+
+		#centre {
+			margin-left: 160px;
+			margin-right: 160px;
+			background: #d9d3b8;
+			z-index:1;
+			text-align:justify;
+			padding-left:10px;
+			padding-right:10px;
+			border:solid 1px #732e32;
+		}
+
+
+		table{
+			margin:auto;
+			margin-top: 10px;
+		}
+
+		table, td, tr, th { 			
+			border: solid 2px #732e32;
+			border-collapse: collapse;			
+		}
+
+		#coldroite {
+			float:right;	
+			width: 155px;
+			height:570px;
+			background: #d9d3b8;
+			color: #732e32;
+			border:solid 1px #732e32;
+		}
+
+		#coldroite ul li {
+			text-align:left;
+			font-size: 75%;
+			padding-bottom:10px;
+			padding-top:10px;
+		}
+
+		#lstlnk {
+		width:153px;
+		}
+
+		#lstlnk ul, #lstlnk li {
+			padding-left: 0px;
+			text-align: center;
+		}
+
+		#lstlnk li :before {
+			content:url("images/rose.png");
+		}
+
+		#lstlnk li :after {
+			content:url("images/rose.png");
+		}
+
+		#lstlnk a {
+			text-decoration: none;
+			color: #732e32;
+			display:block;
+			text-align:center;
+		}
+
+		#lstlnk a:hover {
+			background-color:white;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		form {
+			padding: 5px;
+			border: 1px solid #732e32;
+			margin:5px;
+			color:#732e32;
+		}
+
+		#pied {
+			clear:both;
+			margin:auto;
+			height:auto;
+			background: #d9d3b8;
+			background-image:url("images/header.png");
+			background-repeat:no-repeat;
+			background-position:center center;
+		}
+		
+		address {
+			color: #732e32;
+			text-align:center;
+			padding-bottom:5px;
+			padding-top:5px;
+		}
+	</style>
+</head>
+		
+<body>
+ 
+	<header> 
+		<div id="logo">	   
+			<a href="Accueil.html"><img src="images/CM_logo.png" alt="logo cosméto maison" /></a>	  
+		</div>
+	   
+	   <div id="entete">	   
+			<p style="font-size: 200%;">Prenez soin de vous au naturel</p>
+	   </div>
+	</header>
+	
+	<nav>
+		<ul id="menu">
+			<li onmouseover="show()"><a href="Accueil.html">Accueil</a></li>
+			
+			<li onmouseover="show('ssmenu1')">Menu 1
+				<ul class="ssmenu" id="ssmenu1" onmouseleave="show()">				
+					<li><a href="#menu">nav<br/>superposition blocs<br/>display<br/>inline-block<br/>:hover</a></li>
+					<li><a href="#entete">alignement vertical balise bloc<br/>formatage dans balise</a></li>
+					<li><a href="#colgauche">section</a></li>
+					<li><a href="#centre">overflow</a></li>
+					<li><a href="Accueil.html#strong">strong</a></li>
+					<li><a href="Accueil.html#em">em</a></li>
+					<li><a href="demaquillant.html#span">span</a></li>
+				</ul>
+			</li>	
+			
+			<li onmouseover="show('ssmenu2')">Menu 2
+				<ul class="ssmenu" id="ssmenu2" onmouseleave="show()">	
+					
+					<li><a href="Accueil.html#memomap">Image cliquable</a></li>
+					<li><a href="#coldroite">aside</a></li>
+					<li><a href="articles.html#art01">article</a></li>
+					<li><a href="demaquillant.html">tableau avec fusion<br/>feuille de style interne<br/>menu avec lien position fixe</a></li>
+					<li><a href="#lstlnk">:before :after</a></li>				
+				</ul>
+			</li>
+
+			<li onmouseover="show('ssmenu3')">Menu 3
+				<ul class="ssmenu" id="ssmenu3" onmouseleave="show()">
+					<li><a href="iframe.html">iframe<br/>video<br/>bloc positionné dans un bloc positionné</a></li>								
+					<li><a href="formulaire.html">Formulaire<br/>:focus</a></li>										
+				</ul>
+			</li>				
+		</ul>
+	</nav>
+	
+	<section id="colgauche">
+								
+		<h3 class="heading3">Connexion</h3>
+		<form method="post" action="connexion.php">
+			<label for="nom">Login :</label><br />
+			<input type="text" name="nom" id="nom" class="flash" size="14" /><br />
+			<label for="pass">Mot de passe :</label><br />
+			<input type="password" name="pass" id="pass" class="flash" size="14"/><br />
+			<br/>
+			<input type="submit" value="Valider"/> <input type="reset" value="Effacer" />
+		</form>
+		<a href="formulaire.html">Formulaire de contact</a>
+		
+	</section>
+	<aside id="coldroite">
+		<div id="lstlnk">
+			<h3 class="heading3">Les dernières recettes</h3>
+			<ul>
+				<li><a href="demaquillant.html">Démaquillant biphasé</a></li>
+				<li><a href="articles.html#art01">Soin coup de soleil</a></li>
+				<li><a href="articles.html#art02">Soin pour pieds secs</a></li>				
+				<li><a href="articles.html#art03">Masque purifiant</a></li>
+				<li><a href="articles.html#art04">Gommage visage</a></li>
+				<li><a href="articles.html#art05">Soin pointes sèches</a></li>
+				<li><a href="articles.html#art06">Shampooing sec</a></li>		
+			</ul>
+		</div>
+	</aside>
+	
+	<main id="centre">
+		<table>
+			<tr ><th colspan="3">Démaquillant bi-phasé</th></tr>
+			
+			<tr>
+				<th>Type de peau</th>
+				<th>Huile végétale 50%</th>
+				<th>Hydrolat 50%</th>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">Sèche</th>
+				<td>Avocat</td>
+				<td>Fleur d'oranger</td>
+			</tr>
+			<tr>
+				<td>Rose musquée</td>
+				<td>Rose</td>
+			</tr>
+			<tr>
+				<td>Amande douce</td>
+				<td>Camomille</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="3">Sensible</th>
+				<td>Rose musquée</td>
+				<td>Bleuet</td>
+			</tr>
+			<tr>
+				<td>Calendula (macérât)</td>
+				<td>Hamamélis</td>
+			</tr>
+			<tr>
+				<td>Amande douce</td>
+				<td>Camomille</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Mixte</th>
+				<td>Jojoba</td>
+				<td>Lavande</td>
+			</tr>
+			<tr>
+				<td>Macérat de carotte</td>
+				<td>Géranium</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Déshydratée</th>
+				<td rowspan="2">Macadamia</td>
+				<td>Fleur d'oranger</td>
+			</tr>
+			<tr>
+				<td>Rose</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="4">Mature</th>
+				<td>Argan</td>
+				<td rowspan="2">Rose</td>
+			</tr>
+			<tr>
+				<td>Noyau d'abricot</td>			
+			</tr>
+			<tr>
+				<td>Onagre</td>
+				<td rowspan="2">Géranium</td>
+			</tr>
+			<tr>
+				<td>Rose musquée</td>
+			</tr>
+			
+			<tr>
+				<th>Desquamante</th>
+				<td>Amande douce</td>
+				<td>Camomille</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Fragile</th>
+				<td rowspan="2">Calophylle</td>
+				<td>Hamamélis</td>
+			</tr>
+			<tr>
+				<td>Hélichryse</td>
+			</tr>
+		</table>
+		<p>Il suffit de mettre <span id="span">l'huile</span> et <span>l'hydrolat</span> dans le flacon de votre choix.<br/>Agiter avant l'emploi et appliquer avec un disque de coton sur l'ensemble du visage. Utiliser de l'hydrolat pour terminer votre routine démaquillage.</p>
+	</main>
+	
+	<footer id="pied">
+		<address><p>Cosméto maison<br/>Rue des fleurs, 12<br/>2222 Le Jardin<br/></p></address>
+	</footer>
+</body>
+</html>	
+	

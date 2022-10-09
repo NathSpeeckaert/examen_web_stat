@@ -1,0 +1,322 @@
+body {
+	background-image:linear-gradient(#26402d, #b6cabb);
+	width: 900px;
+	margin:auto;
+	font: 100% century gothic, verdana, arial, sans-serif;
+}
+
+.heading1 {
+	color:#26402D;
+	font-size: 150%;
+	text-align:center;
+	font-family: 'Poiret One', century gothic, sans-serif;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+.heading2 {
+	color:#26402D;
+	font-size: 120%;
+	text-align:left;
+	font-family: 'Poiret One', century gothic, sans-serif;
+}
+.heading3 {
+	color:#26402D;
+	font-size: 110%;
+	text-align:center;
+	font-family: 'Poiret One', century gothic, sans-serif;
+}				
+
+header {
+	background-image:url("images/header.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	height:150px;
+	width:100%;	
+}
+
+#logo {
+	float:left;
+	padding-left:5px;	
+	width: 25%;
+	height:130px;	
+	text-align:left;
+}
+
+#entete {
+	display: table-cell;
+	vertical-align: middle;
+	height:130px;
+	width:75%;
+	/* padding-left: 25%;	 */
+	color:#26402D;
+	text-align:right;
+	font-family: 'Poiret One', century gothic, sans-serif;
+	font-weight: bold;
+	font-size:200%;
+}
+
+nav {
+	text-align:center;
+	background-color: #b6cabb;
+	width:100%;
+	height: 25px;	
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top:5px;
+	padding-bottom:5px;	
+}
+
+#menu {
+	display:inline-block;	
+	width:100%;
+	height: 25px;
+	margin:auto;
+	padding:0;
+	text-align:center;
+	vertical-align:middle;
+	z-index:3;
+	position:sticky;	
+	color: #26402d;	
+}
+
+#menu ul{
+	padding-left: 0px;	
+}
+
+#menu ul li{
+	width:100%;	
+}
+	 
+#menu a {
+	text-decoration: none;	
+	color: #26402d;
+	display:block;
+	height:auto;		
+} 
+ 
+#menu li {
+	width:25%;
+	float:left;
+	cursor: pointer;
+	background-color: #b6cabb;
+}
+ 
+#menu li:hover {
+	background-color:#d9d3b8;
+}
+
+.ssmenu li a {
+	display:block;
+	z-index:2;
+	font-size:85%;
+	border-bottom: solid 1px #26402d;
+	padding:3px;	
+}
+
+.flash:focus {
+	background-color:#d9c5d2;
+}
+
+#centre {
+	float:left;	
+	margin-bottom: 5px;
+	width: 900px;
+	height:800px;
+	overflow :auto;
+	background: #d9d3b8;
+	z-index:1;
+	text-align:justify;	
+}
+
+#centre li{
+	list-style-image: url(images/rose.png);
+}
+article{
+	margin:5px;
+	border: solid 1px #26402d;
+	padding: 7.5px;
+}
+table{
+	margin:auto;
+	margin-top: 10px;
+}
+
+table, td, tr, th { 			
+	border: solid 2px #26402d;
+	border-collapse: collapse;			
+}
+
+ul {
+	list-style-type: none;
+}
+
+#pied {
+	clear:left;
+	margin:auto;
+	height:auto;
+	background: #b6cabb;
+	background-image:url("images/header.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+address {
+	color: #26402D;
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+
+@media(max-width:1024px)
+{
+	body{
+		width:auto;
+	}
+	
+	#centre{
+		width:auto;
+	}
+	#pied{
+		width:auto;
+	}
+
+}
+
+@media (max-width:640px)
+{
+	body{
+		width:auto;
+	}
+	#logo{
+		float:none;
+		width:100%;
+		height:auto;
+		text-align:center;
+	}
+	header{
+		height:auto;
+	}
+	
+	#entete{
+		display:block;
+		width:100%;
+		height:auto;
+		text-align:center;
+		margin:auto;
+				
+	}
+	#centre{
+		width:auto;
+	}
+	#pied{
+		width:auto;
+	}
+	
+}
+
+/* iPad in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+	body{
+		width:auto;
+	}
+	#logo{
+		float:none;
+		width:100%;
+		height:auto;
+		text-align:center;
+	}
+	header{
+		height:auto;
+	}
+	
+	#entete{
+		display:block;
+		width:100%;
+		height:auto;
+		text-align:center;
+		margin:auto;		
+	}
+	#centre{
+		width:auto;
+	}
+	#pied{
+		width:auto;
+	}
+  
+}
+
+/* iPhone 6, 7, & 8 Plus in portrait & landscape */
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px)
+{
+	body{
+		width:auto;
+	}
+	#logo{
+		float:none;
+		width:100%;
+		height:auto;
+		text-align:center;
+	}
+	header{
+		height:auto;
+	}
+	
+	#entete{
+		display:block;
+		width:100%;
+		height:auto;
+		text-align:center;
+		margin:auto;
+		font-size:150%;	
+	}
+	#centre{
+		width:auto;
+	}
+	#pied{
+		width:auto;
+	}
+	
+	
+}
+
+
+
+
+/* Galaxy S5 portrait and landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+	body{
+		width:auto;
+	}
+	#logo{
+		float:none;
+		width:100%;
+		height:auto;
+		text-align:center;
+	}
+	header{
+		height:auto;
+	}
+	
+	#entete{
+		display:block;
+		width:100%;
+		height:auto;
+		text-align:center;
+		margin:auto;
+		font-size:125%;
+	}
+	#centre{
+		width:auto;
+	}
+	#pied{
+		width:auto;
+	}
+}
